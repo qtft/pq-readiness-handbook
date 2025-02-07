@@ -1,0 +1,14 @@
+format: jb-book
+root: homepage.md
+
+parts:
+  - caption: สารบัญ
+    chapters:
+    - file: introduction/overview.md
+      sections:
+      - file: introduction/placeholder.md
+    - file: pqc/overview.md
+      sections:
+      - file: pqc/placeholder.md
+    - file: references.md
+    - file: credits.md
