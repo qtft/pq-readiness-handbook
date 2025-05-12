@@ -6,6 +6,7 @@ parts:
     chapters:
     - file: introduction/overview.md
       sections:
+      - file: introduction/definitions.md
       - file: introduction/placeholder.md
     - file: pqc/overview.md
       sections:
