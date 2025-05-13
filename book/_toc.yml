@@ -7,7 +7,7 @@ parts:
     - file: introduction/overview.md
       sections:
       - file: introduction/definitions.md
-      - file: introduction/placeholder.md
+      - file: introduction/quantum-threat.md
     - file: pqc/overview.md
       sections:
       - file: pqc/placeholder.md
