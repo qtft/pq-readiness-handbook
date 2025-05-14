@@ -23,5 +23,15 @@ Build the book
 teachbooks build book
 ```
 
+Use the following command for running the server locally.
+```
+teachbooks serve
+```
+
+To stop the server, run:
+```
+teachbooks serve stop
+```
+
 # Deploy the book
 Once a commit is merged, GitHub Action deploys it automatically
