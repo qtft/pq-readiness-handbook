@@ -8,8 +8,10 @@ parts:
       sections:
       - file: introduction/definitions.md
       - file: introduction/quantum-threat.md
-    - file: pqc/overview.md
+    - file: pq-security/overview.md
       sections:
-      - file: pqc/placeholder.md
+      - file: pq-security/pqc.md
+      - file: pq-security/qkd.md
+      - file: pq-security/hybrid-soln.md
     - file: references.md
     - file: credits.md
