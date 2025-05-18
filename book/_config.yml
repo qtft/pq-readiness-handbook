@@ -7,8 +7,9 @@ execute:
 only_build_toc_files: true
 
 html:
-  favicon : "figures/qtft-favicon.ico"
-  baseurl :  "https://qtft.github.io/pq-readiness-handbook/" #Replace this with your own URL
+  favicon: "figures/qtft-favicon.ico"
+  baseurl:  "https://qtft.github.io/pq-readiness-handbook/" #Replace this with your own URL
+  navbar_number_sections: true
 
 sphinx:
   config:
@@ -48,8 +49,3 @@ sphinx:
 
 bibtex_bibfiles: 
   - references.bib
-
-# Enable numbered sections
-numbering:
-  enabled: true
-  maxdepth: 5

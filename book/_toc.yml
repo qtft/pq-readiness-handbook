@@ -1,8 +1,10 @@
 format: jb-book
 root: homepage.md
-
+options:
+  numbered: true
 parts:
   - caption: สารบัญ
+    numbered: true
     chapters:
     - file: introduction/overview.md
       sections:
@@ -13,5 +15,13 @@ parts:
       - file: pq-security/pqc.md
       - file: pq-security/qkd.md
       - file: pq-security/hybrid-soln.md
+    - file: timelines/overview.md
+      sections:
+      - file: timelines/mosca.md
+      - file: timelines/likelihood.md
+    - file: guidelines/overview.md
+      sections:
+      - file: guidelines/org-preparation.md
+      - file: guidelines/inventory.md
     - file: references.md
-    - file: credits.md
+    - file: acknowledgement.md
