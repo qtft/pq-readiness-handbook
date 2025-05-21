@@ -10,15 +10,18 @@ parts:
       sections:
       - file: introduction/definitions.md
       - file: introduction/quantum-threat.md
+      - file: introduction/use-cases.md
+      - file: introduction/affected-algorithms.md
+      - file: introduction/affected-technology.md
     - file: pq-security/overview.md
       sections:
       - file: pq-security/pqc.md
       - file: pq-security/qkd.md
-      - file: pq-security/hybrid-soln.md
     - file: timelines/overview.md
       sections:
       - file: timelines/mosca.md
       - file: timelines/likelihood.md
+      - file: timelines/use-migration.md
     - file: guidelines/overview.md
       sections:
       - file: guidelines/org-preparation.md
