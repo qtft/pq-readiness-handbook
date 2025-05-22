@@ -17,13 +17,13 @@ parts:
       sections:
       - file: pq-security/pqc.md
       - file: pq-security/qkd.md
-    - file: timelines/overview.md
+    - file: migration/overview.md
       sections:
-      - file: timelines/mosca.md
-      - file: timelines/likelihood.md
-      - file: timelines/usa-migration.md
-      - file: timelines/others-migration.md
-      - file: timelines/thai-migration.md
+      - file: migration/mosca.md
+      - file: migration/likelihood.md
+      - file: migration/usa-migration.md
+      - file: migration/others-migration.md
+      - file: migration/thai-migration.md
     - file: guidelines/overview.md
       sections:
       - file: guidelines/org-preparation.md
