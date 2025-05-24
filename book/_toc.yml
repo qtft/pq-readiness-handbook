@@ -17,16 +17,30 @@ parts:
       sections:
       - file: pq-security/pqc.md
       - file: pq-security/qkd.md
-    - file: migration/overview.md
+    - file: situations/overview.md
       sections:
-      - file: migration/mosca.md
-      - file: migration/likelihood.md
-      - file: migration/usa-migration.md
-      - file: migration/others-migration.md
-      - file: migration/thai-migration.md
+      - file: situations/mosca.md
+      - file: situations/likelihood.md
+      - file: situations/timelines.md
+    - file: regulations/overview.md
+      sections:
+      - file: regulations/usa.md
+      - file: regulations/other-countries.md
+      - file: regulations/thailand.md
     - file: guidelines/overview.md
       sections:
       - file: guidelines/org-preparation.md
+      - file: guidelines/checklist.md
       - file: guidelines/inventory.md
+      - file: guidelines/crypto-agility.md
+      - file: guidelines/integration.md
+    - file: tech-considerations/overview.md
+      sections:
+      - file: tech-considerations/limitations.md
+      - file: tech-considerations/security-analysis.md
+      - file: tech-considerations/hybrid-impl.md
+      - file: tech-considerations/tools-and-vendors.md
+      - file: tech-considerations/certifications.md
+    - file: conclusion.md
     - file: references.md
     - file: acknowledgement.md

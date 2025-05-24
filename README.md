@@ -33,5 +33,10 @@ To stop the server, run:
 teachbooks serve stop
 ```
 
+<!-- 
+Stop, build, start
+teachbooks serve stop; teachbooks build book; teachbooks serve 
+-->
+
 # Deploy the book
 Once a commit is merged, GitHub Action deploys it automatically

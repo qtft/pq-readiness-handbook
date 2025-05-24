@@ -1,5 +1,14 @@
 # การเตรียมความพร้อมสำหรับยุคควอนตัมในระดับองค์กร
 
+- Migration Plan and Roadmap
+- Inventories (Assets and Crypto)
+- Task force and centre of excellence
+- Regulatory and compliance guidance (NIST Crypto Framework 2.0)
+
+a. Phased rollout strategy
+b. Interoperability testing and validation frameworks
+c. Training & operational readiness
+
 (preparation-steps)=
 ## ขั้นตอนการเตรียมความพร้อม
 โดยมีแนวปฏิบัติการเตรียมความพร้อมมีขั้นตอนการดำเนินงานโดยสังเขป ดังนี้
