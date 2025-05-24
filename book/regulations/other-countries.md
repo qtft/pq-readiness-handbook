@@ -1,4 +1,4 @@
-# การกำกับดูแลในต่างประเทศ
+# ประเทศอื่น ๆ
 
 EU Quantum-Safe Europe, U.S. NSTAC
 

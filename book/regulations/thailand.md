@@ -1,4 +1,4 @@
-# การกำกับดูแลในประเทศไทย
+# ประเทศไทย
 
 ```{figure} ../figures/thai-timeline.png
 ---
