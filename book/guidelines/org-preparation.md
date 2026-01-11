@@ -44,3 +44,13 @@ name: org-preparation
 ---
 เตรียมความพร้อมสำหรับยุคควอนตัมในระดับองค์กร
 ```
+
+## การจัดทำแผนและ Roadmap 
+
+## การจัดเตรียมบุคลากร
+- PQ Champion
+- Task force
+
+## Compliance Guidance
+Ref. NIST Crypto Framework 2.0
+
