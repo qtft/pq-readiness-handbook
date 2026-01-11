@@ -9,6 +9,7 @@ parts:
     - file: introduction/overview.md
       sections:
       - file: introduction/definitions.md
+      - file: introduction/quantum-computer.md
       - file: introduction/quantum-threat.md
       - file: introduction/affected-algorithms.md
       - file: introduction/affected-technology.md

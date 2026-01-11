@@ -6,8 +6,62 @@
 - Regulatory and compliance guidance (NIST Crypto Framework 2.0)
 
 a. Phased rollout strategy
+<!-- 
+Phased Rollout Strategy
+A phased rollout balances minimizing exposure to quantum threats with maintaining system
+stability. NIST IR 8547 prescribes a wave-based approach: begin with non-production testbeds
+to validate basic functionality, then pilot PQC in low-risk services, before expanding to
+mission-critical systems [1]. The CISA factsheet emphasizes vendor engagement
+early-confirming PQC support in product roadmaps and firmware updates [2]. Each phase
+should include performance benchmarks, error-handling tests, and rollback plans. Documenting
+lessons learned in each iteration reduces risk when migrating high-value assets.
+- Phase 1-Proof-of-Concept (PoC): Deploy PQC in isolated environments. Validate
+key-generation, encryption/decryption, and signature flows.
+- Phase 2-Pilot: Integrate PQC into a limited set of production endpoints (e.g., VPN
+gateways, partner APIs). Measure handshake latency, CPU/memory overhead, and error
+rates.
+- Phase 3-Broad Deployment: Extend to customer-facing services (web TLS, mobile
+apps). Enforce hybrid mode (classical + PQC) to maintain interoperability.
+- Phase 4-Deprecation & Audit: Remove legacy algorithms once PQC coverage is
+verified. Conduct third-party audits to confirm compliance.
+ -->
+
 b. Interoperability testing and validation frameworks
+<!-- 
+Interoperability Testing & Validation Frameworks
+Interoperability testing verifies that different implementations of PQC schemes can
+communicate correctly under real-world conditions. NIST SP 1800-38C provides a
+Performance and Interoperability Workstream, which includes test harnesses, sample
+configurations, and failure-mode analyses [3]. FIPS 140-3 validation under the CMVP certifies
+that cryptographic modules adhere to defined security and physical protection requirements [4].
+Together, these frameworks reduce deployment risk by catching integration issues-such as
+mismatched parameter sets or message-size overflows-early in the process.
+- Test Vector Validation: Use the official NIST PQC Test Vector Packages to ensure each
+implementation produces the correct ciphertext, shared secret, or signature for given
+inputs.
+- Protocol Interoperability: Execute hybrid TLS handshakes combining classical (e.g.,
+X25519) and PQC KEMs (e.g., Kyber). Record handshake success rates, round-trip times, and fallback behaviors.
+- Module Certification: Submit hardware and software modules incorporating PQC to
+FIPS 140-3 testing labs. Validate logical interfaces, state management, and side-channel
+resistance.
+ -->
 c. Training & operational readiness
+<!-- 
+Training & Operational Readiness
+People are the linchpin in a successful PQC migration. NIST SP 800-50 and SP 800-16 offer
+guidance on creating role-based training programs, from executive briefings to deep-dive labs
+for cryptographic engineers [5][6]. For PQC specifically, curricula should cover algorithm
+principles, parameter choices (e.g., security levels), library integrations (e.g., OpenSSL,
+BoringSSL PQC forks), and incident response procedures for cryptographic failures.
+- Executive Awareness: Workshops that explain the quantum threat, migration timelines,
+and business impacts-ensuring leadership buy-in.
+- Technical Deep Dives: Hands-on sessions where engineers implement PQC KEM and
+signature APIs, troubleshoot integration errors, and benchmark performance.
+- Operational Playbooks: Create runbooks detailing PQC key generation, rotation
+schedules, backup procedures, and rollback steps.
+- Incident Response Drills: Simulate cryptographic failures (e.g., deprecated algorithm
+use) and practice recovery workflows.
+ -->
 
 (preparation-steps)=
 ## ขั้นตอนการเตรียมความพร้อม
@@ -54,3 +108,20 @@ name: org-preparation
 ## Compliance Guidance
 Ref. NIST Crypto Framework 2.0
 
+<!-- 
+Continuous Monitoring, Evaluation & Governance
+Cryptographic risk is dynamic: new attacks, algorithm deprecations, or implementation flaws
+can emerge at any time. Embedding continuous monitoring and governance processes ensures
+the cryptographic estate remains robust. NIST CSF 2.0’s “Detect” and “Respond” functions
+mandate automated alerts for deprecated algorithm usage, performance anomalies, and
+validation failures [9]. FIPS 140-3 revalidation cycles and ISO/IEC 27002’s control A.12.6.1 on
+technical review of applications reinforce the necessity of recurring audits.
+- Automated Alerts: Integrate cryptographic module logs into SIEM systems and set
+alerts for deprecated algorithm calls or failed certificate validations.
+- Performance Baselines: Maintain metrics on encryption/decryption latencies, error
+rates, and resource consumption. Investigate significant deviations.
+- Vulnerability Assessments: Schedule annual third-party penetration tests focused on
+cryptographic implementations, including side-channel and fault injections.
+- Governance Board Reviews: Convene a Cryptography Governance Board quarterly to
+review audit findings, algorithm roadmaps, incident reports, and update migration plans.
+ -->

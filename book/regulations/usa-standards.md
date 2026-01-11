@@ -1,4 +1,4 @@
-# ประเทศสหรัฐอเมริกา
+# มาตรฐานของประเทศสหรัฐอเมริกา
 
 [บันทึกความมั่นคงแห่งชาติฉบับที่ 10 (National Security Memorandum 10 - NSM-10)](https://bidenwhitehouse.archives.gov/briefing-room/statements-releases/2022/05/04/national-security-memorandum-on-promoting-united-states-leadership-in-quantum-computing-while-mitigating-risks-to-vulnerable-cryptographic-systems/) ของประเทศสหรัฐอเมริกา กำหนดเป้าหมายในปี 2035 สำหรับการเปลี่ยนผ่านไปสู่การใช้ PQC ในระบบของรัฐบาลกลาง โดยสามารถสรุปเนื้อหาได้ดังนี้
 

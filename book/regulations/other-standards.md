@@ -1,4 +1,4 @@
-# ประเทศอื่น ๆ
+# มาตรฐานของประเทศอื่น ๆ
 
 EU Quantum-Safe Europe, U.S. NSTAC
 
@@ -353,3 +353,69 @@ Quantum-Safe National Network Project
 International Collaborations
 - Active participation in global PQC standardization efforts through ISO and NIST.
 - Joint research initiatives with international universities and tech companies to advance PQC technologies.
+
+<!-- 
+Regional and national bodies complement NIST’s work to ensure global interoperability,
+address jurisdictional needs, and pilot real-world deployments. ETSI defines
+hybrid-scheme profiles; ISO/IEC extends core security standards; KISA and SAC/TC
+260 manage national contests and roadmaps; ASEAN fosters multilateral cooperation;
+NICT supports quantum ICT integration; Rosstandart updates GOST standards; and
+Singapore’s CSA, MAS, and IMDA drive local guidelines and testbeds. Each plays a
+distinct role in the broader PQC ecosystem.
+
+ETSI
+- TS 104 015 V1.1.1 “Efficient Quantum-Safe Hybrid Key Exchanges with Hidden
+Access Policies” (Feb 2025) specifies how to combine classical KEMs (e.g., X25519)
+with PQC KEMs (e.g., Kyber) under attribute-based policies [6].
+- TR 103 966 V1.1.1 “Deployment Considerations for Hybrid Schemes” (Oct 2024)
+analyzes key management, performance tuning, and compliance testing for integrated
+PQC deployments [7].
+
+ISO/IEC JTC 1/SC 27
+- WG 2 updates ISO/IEC 18033-3 (encryption algorithms) to include test vectors and
+parameter sets for NIST-approved KEMs, and ISO/IEC 19790 (cryptographic module
+requirements) to mandate validation of PQC modules [8].
+- Committee Document SD11 (2024) outlines SC 27’s work programme, confirming PQC
+integration as a top priority [9].
+
+South Korea (KISA)
+- Quantum-Resistant Cryptography National Contest (KpqC) launched Nov 2021; by
+Dec 2023, 16 algorithms advanced to Round 1, with four finalists selected Jan 2025
+under the national roadmap [10].
+- The Quantum-Safe Cryptography Standardization Roadmap (2023) mandates
+phased testing, certification, and mandatory PQC deployment across critical sectors by
+2026 [11].
+
+ASEAN
+- The ASEAN Cybersecurity Cooperation Strategy (2021–2025) calls for regional PQC
+workshops, joint assessments, and harmonized guidelines to integrate quantum-safe
+algorithms into national frameworks [12].
+- Member states collaborate on pilot projects-such as cross-border secure
+communications trials-to ensure readiness for future quantum threats.
+
+China (SAC/TC 260)
+- Notice on International Standard Proposals for Cybersecurity and PQC (Jan 23,
+2025) invites contributions to ISO/IEC frameworks, aligning Chinese cybersecurity
+standards with global PQC efforts [13].
+
+Japan (NICT)
+- The Q-ICT Roadmap (2023) outlines phased deployment of QKD, integration of PQC
+into Beyond 5G networks, and standardization support for metro- and long-haul quantum
+links [14].
+
+Russia (Rosstandart)
+- As a P-member of ISO/IEC JTC 1/SC 27, Rosstandart contributes to amendments of
+GOST R 34 encryption standards to incorporate PQC algorithms and publishes national
+guidelines consistent with ISO/IEC developments [15].
+
+Singapore (CSA, MAS, IMDA)
+- CSA Quantum Security Guidelines (Dec 2024) provide planning frameworks for
+transitioning to quantum-safe systems [17].
+- MAS Advisory on PQC (2023) outlines requirements for financial institutions to
+inventory cryptographic assets and adopt PQC algorithms [18].
+- MAS recommendation for QKD sandbox to evaluate the use of Quantum Key
+Distribution (QKD) [18].
+- IMDA National Quantum-Safe Network Plus (NQSN+) Framework (Jun 2023)
+establishes a nationwide testbed and reference specification for QKD and PQC hybrid
+networks, co-led with ITU-T and industry partners [19]. 
+-->
