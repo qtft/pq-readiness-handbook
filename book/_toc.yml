@@ -11,7 +11,7 @@ parts:
       - file: introduction/definitions.md
       - file: introduction/quantum-computer.md
       - file: introduction/quantum-threat.md
-      - file: introduction/affected-algorithms.md
+      - file: introduction/harvest-now-decrypt-later.md
       - file: introduction/affected-technology.md
     - file: pq-security/overview.md
       sections:
