@@ -24,9 +24,9 @@ parts:
       - file: situations/timelines.md
     - file: regulations/overview.md
       sections:
-      - file: regulations/usa.md
-      - file: regulations/other-countries.md
-      - file: regulations/thailand.md
+      - file: regulations/usa-standards.md
+      - file: regulations/other-standards.md
+      - file: regulations/governance.md
     - file: guidelines/overview.md
       sections:
       - file: guidelines/org-preparation.md

@@ -15,7 +15,7 @@
 
 - (D) ผู้ไม่ประสงค์ดีใช้กุญแจเข้ารหัสลับที่คำนวณได้จากคอมพิวเตอร์ควอนตัมในขั้นตอน (C) เพื่อถอดรหัสลับข้อมูลที่ใช้สื่อสารในขั้นตอนที่ (2)
 
-```{figure} ../figures/harvest-now-decrypt-later.png
+```{figure} ../figures/hndl.png
 ---
 name: harvest-now-decrypt-later
 ---
