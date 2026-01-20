@@ -33,10 +33,13 @@ To stop the server, run:
 teachbooks serve stop
 ```
 
-<!-- 
+# Deploy the book
+Once a commit is merged, GitHub Action deploys it automatically
+
+<!-- TMP
+python3 -m venv venv
+teachbooks build book
+
 Stop, build, start
 teachbooks serve stop; teachbooks build book; teachbooks serve 
 -->
-
-# Deploy the book
-Once a commit is merged, GitHub Action deploys it automatically

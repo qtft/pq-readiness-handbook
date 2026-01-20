@@ -17,6 +17,7 @@ parts:
       sections:
       - file: pq-security/pqc.md
       - file: pq-security/qkd.md
+      - file: pq-security/hybrid-impl.md
     - file: situations/overview.md
       sections:
       - file: situations/mosca.md
@@ -37,7 +38,6 @@ parts:
       sections:
       - file: tech-considerations/limitations.md
       - file: tech-considerations/security-analysis.md
-      - file: tech-considerations/hybrid-impl.md
       - file: tech-considerations/tools-and-vendors.md
       - file: tech-considerations/certifications.md
       - file: tech-considerations/integration.md
