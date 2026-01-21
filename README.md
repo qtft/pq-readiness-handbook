@@ -37,7 +37,7 @@ teachbooks serve stop
 Once a commit is merged, GitHub Action deploys it automatically
 
 <!-- TMP
-python3 -m venv venv
+source venv/bin/activate
 teachbooks build book
 
 Stop, build, start
