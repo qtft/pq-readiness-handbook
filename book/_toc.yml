@@ -6,6 +6,7 @@ parts:
   - caption: สารบัญ
     numbered: true
     chapters:
+
     - file: introduction/overview.md
       sections:
       - file: introduction/definitions.md
@@ -13,27 +14,32 @@ parts:
       - file: introduction/quantum-threat.md
       - file: introduction/harvest-now-decrypt-later.md
       - file: introduction/affected-technology.md
+
     - file: pq-security/overview.md
       sections:
       - file: pq-security/pqc.md
       - file: pq-security/qkd.md
       - file: pq-security/hybrid-impl.md
+
     - file: situations/overview.md
       sections:
       - file: situations/mosca.md
       - file: situations/likelihood.md
       - file: situations/timelines.md
-    - file: regulations/overview.md
+
+    - file: standards/overview.md
       sections:
-      - file: regulations/usa-standards.md
-      - file: regulations/other-standards.md
-      - file: regulations/governance.md
+      - file: standards/usa-standards.md
+      - file: standards/other-standards.md
+      - file: standards/governance.md
+
     - file: guidelines/overview.md
       sections:
       - file: guidelines/org-preparation.md
       - file: guidelines/checklist.md
       - file: guidelines/inventory.md
       - file: guidelines/crypto-agility.md
+
     - file: tech-considerations/overview.md
       sections:
       - file: tech-considerations/limitations.md
@@ -41,6 +47,7 @@ parts:
       - file: tech-considerations/tools-and-vendors.md
       - file: tech-considerations/certifications.md
       - file: tech-considerations/integration.md
+      
     - file: conclusion.md
     - file: references.md
     - file: acknowledgement.md

@@ -123,7 +123,7 @@ name: key-establishment-pqc
 
 มาตรฐานการเข้ารหัสแบบสมมาตร (symmetric cryptography) ที่มีอยู่ในปัจจุบัน ซึ่งรวมถึงฟังก์ชันแฮช (hash functions), XOFs, บล็อกไซเฟอร์ (block ciphers), KDFs, และ DRBGs เป็นต้น มีความเสี่ยงต่ำที่จะถูกโจมตีคอมพิวเตอร์ควอนตัม เมื่อเทียบระบบรหัสลับแบบกุญแจอสมมาตร (asymmetric key cryptography) ดังที่แสดงใน {numref}`block-cipher` และ {numref}`hash-func`
 
-```{table} บล็อกไซเฟอร์ (ฺBlock Ciphers)
+```{table} บล็อกไซเฟอร์ (Block Ciphers)
 ---
 name: block-cipher
 ---
