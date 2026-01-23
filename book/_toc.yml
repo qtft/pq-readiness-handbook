@@ -36,6 +36,7 @@ parts:
     - file: guidelines/overview.md
       sections:
       - file: guidelines/org-preparation.md
+      - file: guidelines/compliance.md
       - file: guidelines/checklist.md
       - file: guidelines/inventory.md
       - file: guidelines/crypto-agility.md
