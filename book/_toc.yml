@@ -39,6 +39,7 @@ parts:
       - file: guidelines/compliance.md
       - file: guidelines/checklist.md
       - file: guidelines/inventory.md
+      - file: guidelines/risk-register.md
       - file: guidelines/crypto-agility.md
 
     - file: tech-considerations/overview.md
