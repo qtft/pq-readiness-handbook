@@ -1,20 +1,38 @@
-# ทะเบียนความเสี่ยง (Risk Register)
+# ทะเบียนความเสี่ยง
 
-<!-- 
-An accurate, up-to-date inventory is the foundation of any cryptographic transition. NIST’s IR
-8547 instructs organizations to catalog every instance where encryption, digital signatures, or
-key exchange is used-across servers, applications, network devices, and cryptographic libraries
-[1]. For each asset, record the algorithm name (e.g., RSA-2048), key length, mode of operation
-(e.g., RSA-OAEP for key wrap), and context of use (TLS, S/MIME, code-signing, database
-encryption). Assess dependencies such as hardware security modules (HSMs), cloud-managed
-KMS, and third-party SDKs to uncover hidden uses. Classify assets by confidentiality
-horizon-the period during which data must remain secure (e.g., 1 year for ephemeral logs, 10
-years for financial records)-to prioritize high-impact migrations [1]. Finally, map each asset to its
-business owner and risk profile to streamline governance.
-- Discovery Tools: Leverage automated scanners and code analysis tools to detect
-cryptographic API calls and certificate stores.
-- Metadata Tagging: Annotate each asset with custom attributes: data classification,
-compliance requirements (e.g., GDPR data), and recovery procedures.
-- Risk Scoring: Apply a scoring model that weights factors such as data sensitivity, attack
-surface, and confidentiality horizon.
- -->
+ทะเบียนความเสี่ยงภัยคุกคามจากคอมพิวเตอร์ควอนตัม (Quantum Risk Register) เป็นเครื่องมือเชิงโครงสร้างที่ช่วยให้องค์กรสามารถระบุ บันทึก ประเมิน และติดตามความเสี่ยงที่เกี่ยวข้องกับเทคโนโลยี Quantum Computing และการเปลี่ยนผ่านสู่ Post-Quantum Cryptography (PQC) ได้อย่างเป็นระบบ ในบริบทของภัยคุกคามควอนตัม ความเสี่ยงจำนวนมากมีลักษณะพิเศษคือ “ยังไม่แสดงผลทันที” แต่มีผลกระทบสูงในระยะยาว โดยเฉพาะต่อความลับของข้อมูล (long-term confidentiality) ข้อมูลที่เข้ารหัสในปัจจุบันอาจยังปลอดภัยวันนี้ แต่มีโอกาสถูกถอดรหัสย้อนหลังได้ในอนาคตเมื่อเทคโนโลยีควอนตัมพัฒนาเพียงพอ ดังนั้น Risk Register จึงไม่ใช่เพียงเครื่องมือด้าน IT security แต่เป็นส่วนหนึ่งของการบริหารความเสี่ยงเชิงกลยุทธ์ การกำกับดูแลข้อมูล และการวางแผนเทคโนโลยีระยะยาวขององค์กร
+
+สำหรับองค์กรไทย ความสำคัญยิ่งเพิ่มขึ้นในภาคการเงิน สาธารณสุข โครงสร้างพื้นฐานสำคัญ และหน่วยงานรัฐ ซึ่งมักมีข้อมูลที่ต้องเก็บเป็นความลับยาวนานหลายสิบปี การเริ่มจัดทำ Risk Register ตั้งแต่ระยะเริ่มต้นช่วยให้องค์กรไม่ต้องเร่งปรับตัวภายใต้แรงกดดันในอนาคต และสามารถวางแผน migration อย่างค่อยเป็นค่อยไป
+
+## ขอบเขตของความเสี่ยงที่ควรถูกบันทึก
+
+Risk Register ด้านควอนตัมควรครอบคลุมทั้งความเสี่ยงเชิงเทคนิค เชิงกระบวนการ และเชิงองค์กร เริ่มจากการสำรวจระบบเข้ารหัสที่ใช้งานอยู่ (cryptographic inventory) เช่น การใช้ RSA, ECC, ระบบ PKI, TLS, VPN, digital signature และการจัดการกุญแจเข้ารหัส จากนั้นพิจารณา “อายุความลับของข้อมูล” ว่าข้อมูลประเภทใดต้องคงความลับเกิน 5 ปี 10 ปี หรือ 30 ปี เพราะข้อมูลที่มีอายุความลับยาวคือกลุ่มที่มีความเสี่ยงควอนตัมสูงสุด
+
+นอกจากนี้ ควรบันทึกความเสี่ยงที่เกี่ยวข้องกับ third-party และ supply chain เช่น ผู้ให้บริการ cloud, network equipment, HSM หรือซอฟต์แวร์สำคัญที่องค์กรพึ่งพา หาก vendor เหล่านี้ไม่มีแนวทางรองรับ PQC ที่ชัดเจน องค์กรอาจเผชิญความเสี่ยงด้านความต่อเนื่องทางธุรกิจและการปฏิบัติตามข้อกำหนดในอนาคต
+
+## ลักษณะความเสี่ยงควอนตัมที่พบบ่อย
+
+หนึ่งในความเสี่ยงหลักคือการพึ่งพาอัลกอริทึมเข้ารหัสแบบดั้งเดิมกับข้อมูลระยะยาว แม้อัลกอริทึมเหล่านี้ยังปลอดภัยในปัจจุบัน แต่มีความเสี่ยงเชิงโครงสร้างต่อควอนตัมคอมพิวเตอร์ในอนาคต หากองค์กรไม่บันทึกและติดตามความเสี่ยงนี้ อาจทำให้การเปลี่ยนผ่านไป PQC เกิดขึ้นช้าเกินไปและมีต้นทุนสูง
+
+อีกความเสี่ยงสำคัญคือสถานการณ์ “Harvest Now, Decrypt Later (HNDL)” ซึ่งผู้โจมตีอาจดักเก็บข้อมูลที่เข้ารหัสไว้ในปัจจุบันเพื่อรอถอดรหัสในอนาคต ความเสี่ยงนี้กระทบโดยตรงต่อข้อมูลทรัพย์สินทางปัญญา ความลับทางธุรกิจ ข้อมูลส่วนบุคคล และข้อมูลด้านความมั่นคง การบันทึกความเสี่ยง HNDL ใน Risk Register ช่วยให้องค์กรตระหนักว่าการป้องกันต้องเริ่มตั้งแต่วันนี้ ไม่ใช่รอให้ควอนตัมคอมพิวเตอร์พร้อมใช้งานจริง
+
+นอกจากนี้ ยังมีความเสี่ยงด้านบุคลากร เช่น การขาดความรู้ความเข้าใจเรื่อง PQC ในระดับผู้บริหารและผู้ปฏิบัติงาน ซึ่งอาจทำให้องค์กรประเมินความสำคัญต่ำเกินไป ตัดสินใจล่าช้า หรือวางลำดับความสำคัญผิดพลาด
+
+## การประเมินและจัดลำดับความเสี่ยง
+
+การประเมินความเสี่ยงควอนตัมควรมองในมิติระยะเวลา (time horizon) ควบคู่กับ impact และ likelihood ความเป็นไปได้ในปัจจุบันอาจต่ำ แต่มีแนวโน้มเพิ่มขึ้นในอนาคต องค์กรจึงควรใช้การประเมินแบบระยะสั้น กลาง และยาว เช่น 0–5 ปี, 5–10 ปี, และมากกว่า 10 ปี เพื่อให้เห็นภาพเชิงกลยุทธ์
+
+ความเสี่ยงควรถูกจัดลำดับตามความสำคัญของข้อมูลและระบบ เช่น ระบบที่เกี่ยวข้องกับตัวตนดิจิทัล การทำธุรกรรมการเงิน หรือโครงสร้างพื้นฐานสำคัญ ควรถูกจัดเป็นลำดับต้นในการวางแผน PQC migration
+
+## ตัวอย่าง Quantum Risk Register
+
+| Risk ID | Risk Description | Affected Assets | Impact | Likelihood | Time Horizon | Risk Level | Mitigation Plan | Owner | Review Cycle |
+|--------|------------------|----------------|--------|------------|-------------|-----------|----------------|-------|-------------|
+| QR-01 | การใช้ RSA/ECC กับข้อมูลที่ต้องเก็บระยะยาว อาจถูกถอดรหัสได้ในอนาคต | Customer DB, Email encryption, Document archive | Critical | Medium | 10–15 ปี | High | ทำ crypto inventory, วางแผน migrate ไป PQC, ใช้ hybrid crypto | CISO | 12 เดือน |
+| QR-02 | ความเสี่ยง Harvest Now, Decrypt Later (HNDL) | ข้อมูลการเงิน, สุขภาพ, IP | High | Medium | 5–15 ปี | High | จัด data classification, เข้ารหัสแบบ PQC/hybrid สำหรับข้อมูลระยะยาว | Data Governance | 6 เดือน |
+| QR-03 | Vendor ยังไม่รองรับ PQC | VPN, HSM, Cloud services | Medium | High | 5–10 ปี | High | ตรวจสอบ vendor roadmap, ใส่ PQC requirement ใน procurement | IT Procurement | 12 เดือน |
+| QR-04 | ระบบไม่รองรับ crypto-agility เปลี่ยนอัลกอริทึมได้ยาก | Legacy systems, PKI | High | Medium | 5–10 ปี | Medium-High | ออกแบบระบบให้เปลี่ยน crypto ได้, ปรับ architecture | Enterprise Architect | 12 เดือน |
+| QR-05 | ขาดความรู้เรื่อง PQC ในองค์กร | บุคลากร, ผู้บริหาร | Medium | High | ระยะสั้น | Medium | จัด training, awareness program | HR + Security | 12 เดือน |
+| QR-06 | Digital signature ระยะยาวอาจถูกปลอมย้อนหลัง | e-Contract, e-Gov docs | High | Medium | 10–20 ปี | High | วางแผนใช้ PQC signature, timestamping เสริม | Legal + IT | 12 เดือน |
+| QR-07 | Regulatory change บังคับใช้ PQC ในอนาคต | Compliance systems | Medium | Medium | 5–10 ปี | Medium | ติดตามมาตรฐานสากล, เตรียม roadmap | Compliance | 12 เดือน |
+| QR-08 | Inventory คริปโตไม่ครบ ทำให้ประเมินความเสี่ยงไม่ได้ | ทั้งองค์กร | Medium | High | ปัจจุบัน | Medium | ทำ cryptographic discovery & inventory | IT Security | 6 เดือน |
