@@ -48,7 +48,6 @@ parts:
       - file: tech-considerations/security-analysis.md
       - file: tech-considerations/tools-and-vendors.md
       - file: tech-considerations/certifications.md
-      - file: tech-considerations/integration.md
       
     - file: conclusion.md
     - file: references.md
