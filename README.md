@@ -35,11 +35,3 @@ teachbooks serve stop
 
 # Deploy the book
 Once a commit is merged, GitHub Action deploys it automatically
-
-<!-- TMP
-source venv/bin/activate
-teachbooks build book
-
-Stop, build, start
-teachbooks serve stop; teachbooks build book; teachbooks serve 
--->
