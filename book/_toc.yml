@@ -20,6 +20,7 @@ parts:
       - file: pq-security/pqc.md
       - file: pq-security/qkd.md
       - file: pq-security/hybrid-impl.md
+      - file: pq-security/web-pki.md
 
     - file: situations/overview.md
       sections:
