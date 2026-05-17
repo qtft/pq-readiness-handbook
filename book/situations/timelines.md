@@ -34,7 +34,7 @@ https://pqshield.com/pqc-transition-roadmaps-and-guidance/
 ---
 name: pqshield-timelines
 ---
-สรุปกรอบเวลาการเตรียมความพร้อมสำหรับยุคควอนตัมในประเทศต่าง ๆ (Source: PQC Roadmaps and Transition Guidance, PQShield)
+สรุปกรอบเวลาการเตรียมความพร้อมสำหรับยุคควอนตัมในประเทศต่าง ๆ (ที่มา : PQC Roadmaps and Transition Guidance, PQShield)
 ```
 
 แหล่งข้อมูลดังกล่าวสะท้อนให้เห็นแนวโน้มร่วมกันของประชาคมโลกในการเร่งเตรียมความพร้อมด้านนโยบาย มาตรฐาน และการนำไปใช้งานจริง ก่อนถึงเส้นตายปี 2035

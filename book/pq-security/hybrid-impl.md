@@ -61,7 +61,7 @@ name: ecdhe-kem
 ---
 name: hybrid-certificate
 ---
-ประเภทของใบรับรองดิจิทัลแบบผสม (Source: arXiv:2505.04333)
+ประเภทของใบรับรองดิจิทัลแบบผสม (ที่มา : arXiv:2505.04333)
 ```
 
 ## ระบบแบบผสม PQC และ QKD
@@ -74,5 +74,5 @@ name: hybrid-certificate
 ---
 name: hybrid-pqc-qkd
 ---
-ตัวอย่างระบบแบบผสม PQC และ QKD สำหรับ Data Center และ Disaster Recovery ขององค์กร (Source: A Guide to a Quantum-Safe Organization, QED-C, 2022)
+ตัวอย่างระบบแบบผสม PQC และ QKD สำหรับ Data Center และ Disaster Recovery ขององค์กร (ที่มา : A Guide to a Quantum-Safe Organization, QED-C, 2022)
 ```
