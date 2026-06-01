@@ -25,8 +25,8 @@ parts:
     - file: situations/overview.md
       sections:
       - file: situations/mosca.md
-      - file: situations/likelihood.md
       - file: situations/timelines.md
+      - file: situations/likelihood.md
 
     - file: standards/overview.md
       sections:

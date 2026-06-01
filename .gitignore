@@ -138,3 +138,7 @@ _build/
 # poetry files
 pyproject.toml
 tmp.txt
+
+# Claude
+claude.md
+.claude/
