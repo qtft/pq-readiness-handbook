@@ -32,7 +32,6 @@ parts:
       sections:
       - file: standards/usa-standards.md
       - file: standards/other-standards.md
-      - file: standards/governance.md
 
     - file: guidelines/overview.md
       sections:
