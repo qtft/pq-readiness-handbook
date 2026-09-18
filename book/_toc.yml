@@ -48,6 +48,12 @@ parts:
       - file: tech-considerations/security-analysis.md
       - file: tech-considerations/tools-and-vendors.md
       - file: tech-considerations/certifications.md
+
+    - file: framework-and-plans/overview.md
+      sections:
+      - file: framework-and-plans/framework.md
+      - file: framework-and-plans/master-plan.md
+      - file: framework-and-plans/sectorial-plan.md
       
     - file: conclusion.md
     - file: references.md
